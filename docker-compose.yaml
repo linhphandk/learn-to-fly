@@ -267,6 +267,9 @@ services:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
-
+  titanic-server:
+    build: ./static-web-server
+    ports:
+      - 8888:8888
 volumes:
   postgres-db-volume:
