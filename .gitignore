@@ -131,3 +131,5 @@ dmypy.json
 # Airflow
 logs/
 plugins/
+
+static-web-server/node_modules/
